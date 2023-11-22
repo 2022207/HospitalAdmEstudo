@@ -33,8 +33,13 @@ public class Patient {
         this.birthDate = birthDate;
         this.bloodType = bloodType;
         this.patientID = currentID;
+        System.out.println(name + " has a birthday on " + birthDate);
         currentID++;
         
+    }
+
+    public static int getCurrentID() {
+        return currentID;
     }
 
     public String getName() {
